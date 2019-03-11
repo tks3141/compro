@@ -8,10 +8,10 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                // "-std=gnu++1y",
+                "-std=c++14",
                 "-g",
                 "-O2",
-                "${fileBasename}",
+                "${relativeFile}",
                 "-o",
                 // "${fileBasenameNoExtension}.out"
                 "a.out"
