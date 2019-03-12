@@ -15,6 +15,8 @@ typedef pair<llong, llong> LP;
 typedef pair<int, P> PP;
 typedef pair<llong, LP> LPP;
 
+typedef vector<llong> LV;
+
 int dy[]={0, 0, 1, -1, 0};
 int dx[]={1, -1, 0, 0, 0};
 
