@@ -2,6 +2,8 @@
     "C_Cpp.default.cppStandard": "c++14",
     "files.associations": {
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "deque": "cpp",
+        "vector": "cpp"
     }
 }
