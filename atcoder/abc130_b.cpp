@@ -10,6 +10,7 @@
 #define INF 999999999999
 #define MOD 1000000007
 using namespace std;
+
 typedef pair<int, int> P;
 typedef pair<llong, llong> LP;
 typedef pair<int, P> PP;
@@ -19,43 +20,24 @@ typedef vector<llong> LV;
 int dy[]={0, 0, 1, -1, 0};
 int dx[]={1, -1, 0, 0, 0};
 
+int main() {
+	llong N,X;
+    cin >> N >> X;
 
-struct Node {
-    int gr = 0;
-    vector <int> tonari ;
-    vector <int> w;
-    int getGR(int from = -1){
-        if(gr!=0){
-            return gr;
-        }else{
-
+    LV a(N);
+    REP(i,N){
+        cin >> a[i];
+    }
+    llong ans,now;
+    now = ans = 0;
+    ans = 1;
+    REP(i,N){
+        now+=a[i];
+        if(now<=X){
+            ans++;
         }
     }
 
-};
-struct Graph {
-    vector<Node> nodes;
-    Graph (int N) :nodes(N){
-
-    }
-    int renketu(int to,int from,int cost){
-        tonari.push_back(to);
-        w.push_back(cost%2 + 2);
-    }
-};
-
-int main() {
-	llong N;
-    cin >>N;
-    LV u(N),v(N),w(N);
-    REP(i,N){
-        cin >> u[i] >> v[i] >> w[i];
-    }
-
-
-    
-
-
-
-
+    cout << ans << endl;
+    return 0;
 }

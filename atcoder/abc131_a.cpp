@@ -19,40 +19,19 @@ typedef vector<llong> LV;
 int dy[]={0, 0, 1, -1, 0};
 int dx[]={1, -1, 0, 0, 0};
 
-
-struct Node {
-    int gr = 0;
-    vector <int> tonari ;
-    vector <int> w;
-    int getGR(int from = -1){
-        if(gr!=0){
-            return gr;
-        }else{
-
-        }
-    }
-
-};
-struct Graph {
-    vector<Node> nodes;
-    Graph (int N) :nodes(N){
-
-    }
-    int renketu(int to,int from,int cost){
-        tonari.push_back(to);
-        w.push_back(cost%2 + 2);
-    }
-};
-
 int main() {
-	llong N;
-    cin >>N;
-    LV u(N),v(N),w(N);
-    REP(i,N){
-        cin >> u[i] >> v[i] >> w[i];
+	llong W,H,x,y;
+    string S;
+    llong ans=0;
+    cin >>S;
+
+    if(S[0]==S[1] || S[1]==S[2] || S[2]==S[3]){
+        cout << "Bad" <<endl;
+    }else{
+        cout << "Good" << endl;
     }
 
-
+    return 0;
     
 
 

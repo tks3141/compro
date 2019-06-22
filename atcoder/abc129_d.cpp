@@ -9,6 +9,7 @@
 #define pb(a) push_back(a)
 #define INF 999999999999
 #define MOD 1000000007
+ 
 using namespace std;
 typedef pair<int, int> P;
 typedef pair<llong, llong> LP;
@@ -19,43 +20,31 @@ typedef vector<llong> LV;
 int dy[]={0, 0, 1, -1, 0};
 int dx[]={1, -1, 0, 0, 0};
 
-
-struct Node {
-    int gr = 0;
-    vector <int> tonari ;
-    vector <int> w;
-    int getGR(int from = -1){
-        if(gr!=0){
-            return gr;
-        }else{
-
+int count_right(vector<vector<int>> &v,int W,int H){
+    REP(i,W){
+        FOR(j,i,W){
+            
         }
     }
-
-};
-struct Graph {
-    vector<Node> nodes;
-    Graph (int N) :nodes(N){
-
-    }
-    int renketu(int to,int from,int cost){
-        tonari.push_back(to);
-        w.push_back(cost%2 + 2);
-    }
-};
+}
 
 int main() {
-	llong N;
-    cin >>N;
-    LV u(N),v(N),w(N);
-    REP(i,N){
-        cin >> u[i] >> v[i] >> w[i];
+	llong H,W;
+    cin >>H >> W ;
+    llong ans =0;
+
+    vector<string> S(H);
+    vector<vector<int>> L(H,vector<int> (W,0)),C(H,vector<int> (W,0));
+    REP(i,H){
+        cin >> S[i];
     }
+
+    // check tate
 
 
     
-
-
-
+    cout << ans << endl;
+    return 0;
 
 }
+
