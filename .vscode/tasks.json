@@ -10,7 +10,7 @@
             "args": [
                 "-std=c++14",
                 "-g",
-                "-O2",
+                // "-O2",
                 "${relativeFile}",
                 "-o",
                 // "${fileBasenameNoExtension}.out"
