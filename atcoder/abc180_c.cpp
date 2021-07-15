@@ -7,32 +7,35 @@
 #define VSORT(v) sort(v.begin(), v.end());
 #define llong long long
 #define pb(a) push_back(a)
-#define INF 999999999999
+#define INF (long long)1 << 61
 #define MOD 1000000007
 using namespace std;
+
 typedef pair<int, int> P;
 typedef pair<llong, llong> LP;
 typedef pair<int, P> PP;
 typedef pair<llong, LP> LPP;
+typedef vector<int> IV;
 typedef vector<llong> LV;
 
 int dy[]={0, 0, 1, -1, 0};
 int dx[]={1, -1, 0, 0, 0};
 
 
-
 int main() {
-	int N;
-    cin >> N;
-    string S;
-    cin >> S;
-    int K;
-    cin >> K;
-    char t = S[K-1];
-    REP(i,N){
-        if(S[i]!=t){
-            S[i]='*';
-        }
+	long long x,y,a,b;cin >> x >> y >> a >> b;
+    long long n1 = 0;
+    long long now = x;
+    while(b>(a-1)*now && now*a<y){
+        n1++;now *= a;
     }
-    cout << S << endl;
+    // long long n1 = logf(b/a-1) / logf(a);
+    // long long res = y - pow(a,n1)*x;
+    long long res = y - now;
+    long long n2 = min(res/b,(res-1)/b);
+
+    cout << n1+n2 << endl;    
+
+
 }
+

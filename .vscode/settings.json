@@ -5,6 +5,10 @@
         "ostream": "cpp",
         "deque": "cpp",
         "vector": "cpp",
-        "random": "cpp"
-    }
+        "random": "cpp",
+        "string": "cpp"
+    },
+    "python.pythonPath": "/usr/local/bin/python3",
+    "C_Cpp.intelliSenseEngineFallback": "Disabled",
+    "C_Cpp.errorSquiggles": "Disabled"
 }
